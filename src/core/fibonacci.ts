@@ -1,1 +1,1 @@
-export const fibonacci = (n: number) => n;
+export const fibonacci = (n: number) => 0;
