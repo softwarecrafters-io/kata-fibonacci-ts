@@ -15,7 +15,7 @@ test('when recieve one returns one', () => {
 });
 
 test('when recieve two returns one', () => {
-	const result = fibonacci(1);
+	const result = fibonacci(2);
 	const expected = 1;
 
 	expect(result).toBe(expected);
