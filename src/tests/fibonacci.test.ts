@@ -20,3 +20,10 @@ test('when recieve two returns one', () => {
 
 	expect(result).toBe(expected);
 });
+
+test('when recieve three returns two', () => {
+	const result = fibonacci(2);
+	const expected = 1;
+
+	expect(result).toBe(expected);
+});
