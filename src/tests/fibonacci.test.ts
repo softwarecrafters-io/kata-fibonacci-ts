@@ -1,29 +1,12 @@
 import { fibonacci } from '../core/fibonacci';
 
-test('when recieve zero returns zero', () => {
-	const result = fibonacci(0);
-	const expected = 0;
+test('fibonnaci should', () => {
+	const testCases = [
+		{ value: 0, expected: 0 },
+		{ value: 1, expected: 1 },
+		{ value: 2, expected: 1 },
+		{ value: 3, expected: 2 },
+	];
 
-	expect(result).toBe(expected);
-});
-
-test('when recieve one returns one', () => {
-	const result = fibonacci(1);
-	const expected = 1;
-
-	expect(result).toBe(expected);
-});
-
-test('when recieve two returns one', () => {
-	const result = fibonacci(2);
-	const expected = 1;
-
-	expect(result).toBe(expected);
-});
-
-test('when recieve three returns two', () => {
-	const result = fibonacci(2);
-	const expected = 1;
-
-	expect(result).toBe(expected);
+	testCases.forEach((testCase) => expect(fibonacci(testCase.value)).toBe(testCase.expected));
 });
