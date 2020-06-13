@@ -7,6 +7,9 @@ test('Calculate fibonnaci number', () => {
 		{ value: 2, expected: 1 },
 		{ value: 3, expected: 2 },
 		{ value: 4, expected: 3 },
+		{ value: 5, expected: 5 },
+		{ value: 6, expected: 8 },
+		{ value: 7, expected: 13 },
 	];
 
 	testCases.forEach((testCase) => expect(fibonacci(testCase.value)).toBe(testCase.expected));
